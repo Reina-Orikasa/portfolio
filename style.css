@@ -1,0 +1,111 @@
+body {
+  background: #121212;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: 300ms ease-in;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #c79800;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content-container {
+  text-align: center;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 15px;
+  margin: 1rem;
+  padding: 5rem;
+}
+
+.icon {
+  display: inline-block;
+  text-align: center;
+}
+
+.icon i {
+  padding: 1rem;
+  border: #fff 5px solid;
+  border-radius: 50%;
+}
+
+.icon i:hover {
+  border: gold 5px solid;
+}
+
+.icon:not(:last-child) {
+  padding-right: 1rem;
+}
+
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.one-content .content-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background: url("https://images.unsplash.com/photo-1557683311-eac922347aa1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1915&q=80") no-repeat center center/cover;
+}
+
+.two-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.two-content .content-container {
+  background: url("https://images.unsplash.com/photo-1557682250-33bd709cbe85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1915&q=80") no-repeat center center/cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.two-content .item-right .content-container {
+  background: url("https://images.unsplash.com/photo-1557682224-5b8590cd9ec5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1915&q=80") no-repeat center center/cover;
+}
+
+#main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#main-nav ul {
+  display: inherit;
+}
+
+#main-nav li:not(:last-child) {
+  padding-right: 1rem;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+#header h1 {
+  font-size: 72px;
+}
+
+#header p {
+  font-size: 28px;
+}
+/*# sourceMappingURL=style.css.map */
