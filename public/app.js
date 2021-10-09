@@ -39,18 +39,20 @@ gsap.from('#header-icons', {
 });
 
 gsap.from('#colorful', {
-  scrollTrigger: '#project-panel',
+  scrollTrigger: '#panel-right',
   duration: 0.8,
   opacity: 0,
   scale: 0.7,
+  delay: 0.5,
   y: 400,
 });
 
 gsap.from('#panel-right', {
-  scrollTrigger: '#project-panel',
-  duration: 0.7,
+  scrollTrigger: '#panel-right',
+  duration: 0.8,
   opacity: 0,
   y: 400,
+  scale: 0.7,
   delay: 0.5,
 });
 
@@ -67,15 +69,6 @@ gsap.from('#top-panel', {
   duration: 0.5,
   y: 300,
 });
-
-// gsap.utils.toArray('.panel').forEach((panel, i) => {
-//   ScrollTrigger.create({
-//     trigger: panel,
-//     start: 'top top',
-//     pin: true,
-//     pinSpacing: false,
-//   });
-// });
 
 function changeColor(color, imgSrc, imgSrcSet) {
   let section = document.getElementById('colorful');
