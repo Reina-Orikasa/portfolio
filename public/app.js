@@ -39,26 +39,24 @@ gsap.from('#header-icons', {
 });
 
 gsap.from('#colorful', {
-  scrollTrigger: '#panel-right',
-  duration: 0.8,
-  opacity: 0,
-  scale: 0.7,
-  delay: 0.5,
+  scrollTrigger: '.panel-project',
+  duration: 0.3,
   y: 400,
+  delay: 0.4,
+  opacity: 0,
 });
 
 gsap.from('#panel-right', {
-  scrollTrigger: '#panel-right',
-  duration: 0.8,
-  opacity: 0,
+  scrollTrigger: '.panel-project',
+  duration: 0.5,
   y: 400,
-  scale: 0.7,
-  delay: 0.5,
+  delay: 0.4,
+  opacity: 0,
 });
 
 gsap.from('#pkmn-home', {
-  scrollTrigger: '#home-img',
-  duration: 0.7,
+  scrollTrigger: '.home-img',
+  duration: 0.5,
   y: 400,
   delay: 0.4,
   opacity: 0,
