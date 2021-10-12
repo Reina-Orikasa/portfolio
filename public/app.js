@@ -38,22 +38,6 @@ gsap.from('#header-icons', {
   delay: 0.5,
 });
 
-gsap.from('#colorful', {
-  scrollTrigger: '.panel-project',
-  duration: 0.3,
-  y: 400,
-  delay: 0.4,
-  opacity: 0,
-});
-
-gsap.from('#panel-right', {
-  scrollTrigger: '.panel-project',
-  duration: 0.5,
-  y: 400,
-  delay: 0.4,
-  opacity: 0,
-});
-
 gsap.from('#pkmn-home', {
   scrollTrigger: '.home-img',
   duration: 0.5,
@@ -67,6 +51,33 @@ gsap.from('#top-panel', {
   duration: 0.5,
   y: 300,
 });
+
+const anim = gsap.from('#colorful', {
+  duration: 0.3,
+  y: 400,
+  delay: 0.4,
+  opacity: 0,
+})
+
+const anim2 = gsap.from('#panel-right', {
+  duration: 0.5,
+  y: 400,
+  delay: 0.4,
+  opacity: 0,
+})
+
+ScrollTrigger.create({
+  trigger: '.panel-project',
+  animation: anim,
+  start: "top center"
+})
+
+ScrollTrigger.create({
+  trigger: '.panel-project',
+  animation: anim2,
+  start: "top center"
+})
+
 
 function changeColor(color, imgSrc, imgSrcSet) {
   let section = document.getElementById('colorful');
