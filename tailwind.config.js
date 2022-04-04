@@ -1,11 +1,5 @@
-const colors = require('tailwindcss/colors');
-
 module.exports = {
-  purge: {
-    enabled: true,
-    content: ['./public/index.html', './public/app.js'],
-  },
-  darkMode: false, // or 'media' or 'class'
+  content: ['./public/index.html', './public/app.js'],
   theme: {
     extend: {
       colors: {
@@ -24,5 +18,4 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require('@tailwindcss/custom-forms')],
 };
