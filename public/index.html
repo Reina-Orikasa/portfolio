@@ -12,78 +12,101 @@
     <title>Michael Tam | Portfolio</title>
   </head>
   <body>
+    <nav class="bg-gradient-to-r from-lily-left to-lily-right">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div
+            class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+          >
+            <div class="flex flex-shrink-0 items-center text-black text-xl">
+              <h1 class="font-light hidden sm:block">Michael Tam</h1>
+            </div>
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <a
+                  href="https://github.com/Reina-Orikasa/"
+                  class="text-gray-800 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Github
+                </a>
+                <a
+                  href="https://michaelztam.com"
+                  class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                  aria-current="page"
+                >
+                  Portfolio
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+          ></div>
+        </div>
+      </div>
+    </nav>
     <div
-      class="mx-auto p-16 text-center bg-gradient-to-r from-lily-left to-lily-right h-5/6"
+      class="mx-auto p-16 text-center bg-gradient-to-r from-lily-left to-lily-right"
     >
       <div class="mb-8" id="header-text">
-        <h1 class="text-6xl md:text-9xl">Hello</h1>
-        <p class="text-xl">I'm Michael</p>
+        <h1 class="text-3xl md:text-6xl font-semibold">Hello, I'm Michael</h1>
+        <h3 class="text-2xl mt-4">
+          I create React websites for fun and travel in my spare time.
+        </h3>
       </div>
 
-      <div class="inline-grid grid-cols-1 mt-4" id="header-icons">
-        <div class="icons">
-          <a href="https://github.com/Reina-Orikasa" target="_blank">
-            <svg
-              class="w-16 h-16 transition duration-500 ease-in-out text-black hover:text-yellow-400 hover:border-yellow-300 border-2 rounded-full p-2 md:w-28 md:h-28"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-              ></path>
-            </svg>
-            GitHub
+      <button
+        class="border-2 border-black rounded-xl p-4 transition duration-500 ease-in-out text-black hover:border-black hover:bg-yellow-200"
+      >
+        <a href="https://github.com/Reina-Orikasa">Github</a>
+      </button>
+    </div>
+
+    <div class="bg-gradient-to-r from-lily-left to-lily-right pt-24">
+      <h1 class="text-3xl ml-24 mb-8 font-bold">Stuff I've Made</h1>
+      <div class="grid md:grid-cols-2 gap-4 mx-24 pb-24">
+        <div
+          class="rounded-xl text-center mb-8 p-4 bg-1 transition hover:translate-y-4 duration-300"
+        >
+          <a
+            href="https://reina-orikasa.github.io/a-fake-store"
+            class="hover:underline font-light"
+            target="_blank"
+          >
+            <img src="img/afs.png" class="mb-4" />
           </a>
+          <a
+            href="https://reina-orikasa.github.io/a-fake-store"
+            class="hover:underline font-semibold text-2xl block mb-4"
+            target="_blank"
+          >
+            A Fake Store
+          </a>
+          <span class="font-light border-2 border-lime-500 rounded-xl p-2 ">React</span>
+          <span class="font-light border-2 border-lime-500 rounded-xl p-2">TailwindCSS</span>
+        </div>
+        <div
+          class="rounded-xl text-center mb-8 p-4 bg-1 transition hover:translate-y-4 duration-300"
+        >
+          <a
+            href="https://reina-orikasa.github.io/Mon-Type-Counters/public/index.html"
+            class="hover:underline font-light"
+            target="_blank"
+          >
+            <img src="img/pkmn-ct.png" class="mb-4" />
+          </a>
+          <a
+            href="https://reina-orikasa.github.io/Mon-Type-Counters/public/index.html"
+            class="hover:underline font-semibold text-2xl block mb-4"
+            target="_blank"
+          >
+            Pkmn Counters
+          </a>
+          <span class="font-light border-2 border-lime-500 rounded-xl p-2">TailwindCSS</span>
         </div>
       </div>
     </div>
 
-    <h1 class="text-2xl mt-24 ml-24 mb-4 font-bold">Stuff I've Made</h1>
-    <div class="grid md:grid-cols-2 gap-4 mx-24 mb-24">
-      <div
-        class="rounded-xl text-center mb-8 p-4 bg-1 transition hover:translate-y-4 duration-300"
-      >
-        <a
-          href="https://reina-orikasa.github.io/a-fake-store"
-          class="hover:underline font-light"
-          target="_blank"
-        >
-          <img src="img/afs.png" class="mb-4" />
-        </a>
-        <a
-          href="https://reina-orikasa.github.io/a-fake-store"
-          class="hover:underline font-semibold text-xl"
-          target="_blank"
-        >
-          A Fake Store
-        </a>
-        <p class="font-light">React</p>
-      </div>
-      <div
-        class="rounded-xl text-center mb-8 p-4 bg-1 transition hover:translate-y-4 duration-300"
-      >
-        <a
-          href="https://reina-orikasa.github.io/Mon-Type-Counters/public/index.html"
-          class="hover:underline font-light"
-          target="_blank"
-        >
-          <img src="img/pkmn-ct.png" class="mb-4" />
-        </a>
-        <a
-          href="https://reina-orikasa.github.io/Mon-Type-Counters/public/index.html"
-          class="hover:underline font-semibold text-xl"
-          target="_blank"
-        >
-          Pkmn Counters
-        </a>
-        <p class="font-light">TailwindCSS and JavaScript</p>
-      </div>
-    </div>
     <hr />
     <section class="panel">
       <div
@@ -101,8 +124,8 @@
               heroicons.dev
             </a>
           </p>
-          <p>I have been to 12 countries so far (excluding the US).</p>
-          <p>My next travel destination is Japan!</p>
+          <p>I have been to 13 countries so far (and 13 US States).</p>
+          <p>Currently enjoying life in Japan!</p>
         </div>
 
         <div class="justify-self-start self-end">

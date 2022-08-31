@@ -77,14 +77,3 @@ ScrollTrigger.create({
   animation: anim2,
   start: "top center"
 })
-
-
-function changeColor(color, imgSrc, imgSrcSet) {
-  let section = document.getElementById('colorful');
-  let image = document.getElementById('colorful-image');
-  image.src = imgSrc;
-  image.srcset = imgSrcSet;
-
-  section.style.transition = 'all 0.6s';
-  section.style.backgroundColor = color;
-}
