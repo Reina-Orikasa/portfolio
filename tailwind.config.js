@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./public/index.html', './public/app.js'],
+  content: ['./public/index.html', './public/app.js', 'index.html'],
   theme: {
     extend: {
       colors: {
@@ -12,6 +12,7 @@ module.exports = {
         'fairy-pink': '#EE99AC',
         'pokemon-electric': '#F8D030',
         'pokemon-water': '#6890F0',
+        'compliment': '#515ada',
       },
     },
   },
