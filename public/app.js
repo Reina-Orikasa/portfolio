@@ -1,28 +1,28 @@
 gsap.registerPlugin(ScrollTrigger);
 
-// let d = new Date();
+let d = new Date();
 
-// let options = {
-//   month: 'long',
-//   day: '2-digit',
-//   year: 'numeric-',
-// };
+let options = {
+  month: 'long',
+  day: '2-digit',
+  year: 'numeric-',
+};
 
-// function displayDate(d, options, htmlSelector) {
-//   let formatDate = new Intl.DateTimeFormat('en', options);
+function displayDate(d, options, htmlSelector) {
+  let formatDate = new Intl.DateTimeFormat('en', options);
 
-//   let today = formatDate.format(d);
+  let today = formatDate.format(d);
 
-//   htmlSelector.insertAdjacentHTML('beforeend', today);
-// }
+  htmlSelector.insertAdjacentHTML('beforeend', today);
+}
 
-// displayDate(
-//   d,
-//   {
-//     year: 'numeric',
-//   },
-//   document.querySelector('.year')
-// );
+displayDate(
+  d,
+  {
+    year: 'numeric',
+  },
+  document.querySelector('.year')
+);
 
 gsap.from('#header-text', {
   duration: 0.8,
